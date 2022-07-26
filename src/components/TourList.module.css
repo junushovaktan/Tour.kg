@@ -1,0 +1,11 @@
+.h2{
+    margin-left: 20px;
+}
+.list{
+    list-style-type: none;
+    font-size: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 600;
+    letter-spacing: 5px;
+    line-height: 30px;
+}

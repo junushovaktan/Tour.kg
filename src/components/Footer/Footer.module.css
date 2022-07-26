@@ -1,0 +1,26 @@
+  .footerWrapper{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: aquamarine;
+    height: 80px;
+    align-items: center;
+    margin: 0;
+  }
+  .footerLi {
+    font-weight: 700;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    background: black;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .footerLi:hover{
+    color: orange;
+  }
+  
+  
+  
+  

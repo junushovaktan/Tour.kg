@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import TourList from './components/TourList'
+import {useState} from 'react';
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import AboutPage from './pages/aboutPage/AboutPage.js';
+import Mode from './components/Mode/Mode';
 
-function App() {
+
+
+
+function App(changeMode) {
+  const [mode, setMode] = useState({current:"day"})
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <div className="App">
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<TourList />}/>
+        <Route path='/about' element={<AboutPage/>}/>
+        <Route path='/profile' element={<Mode mode={mode} changeMode={setMode}/>}/>
+      </Routes>
+    </BrowserRouter>
+  </div>
+      
+  )
 }
-
 export default App;
