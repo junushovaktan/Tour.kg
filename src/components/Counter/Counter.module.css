@@ -1,0 +1,22 @@
+.all{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.span{
+    margin: 0 30px;
+}
+.but{
+    width: 200px;
+    height: 30px;
+    background: powderblue;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.but:hover{
+    border: 2px solid red;
+}

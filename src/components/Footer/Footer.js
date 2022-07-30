@@ -17,6 +17,9 @@ function Footer() {
         <li>
           <NavLink className = {classes.footerLi} to="/profile">Профиль</NavLink>
           </li>
+          <li>
+            <NavLink className={classes.footerLi} to="/Counter">Счётчик</NavLink>
+          </li>
       </ul>
     </div>
   );
